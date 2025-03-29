@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .hidden {
+            display: none;
+        }
+        .visible {
+            display: block;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            background-color: #ff007f;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #ff004f;
+        }
+        #text {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+        .hidden {
+            display: none;
+        }
+        .visible {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>JavaScript DOM Manipulation</h1>
+    <p id="text">Click the button to change this text.</p>
+    
+    <button onclick="changeText()">Change Text</button>
+    <button onclick="toggleBox()">Toggle Box</button>
+    
+    <div id="box" class="box">I am a box</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

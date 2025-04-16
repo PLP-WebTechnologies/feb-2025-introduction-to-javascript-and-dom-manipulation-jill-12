@@ -17,3 +17,25 @@ function toggleBox() {
         document.body.appendChild(newBox);
     }
 }
+// Function to add a new element dynamically
+  function addNewElement() {
+    const newElementContainer = document.getElementById("newElementContainer");
+    
+    const newElement = document.createElement("div");
+    newElement.classList.add("box");
+    newElement.textContent = "This is a new dynamically added box!";
+    
+    newElementContainer.appendChild(newElement);
+  }
+  
+  // Function to remove the last dynamically added element
+  function removeElement() {
+    const newElementContainer = document.getElementById("newElementContainer");
+    
+    // Check if there are elements to remove
+    if (newElementContainer.children.length > 0) {
+      newElementContainer.removeChild(newElementContainer.lastChild);
+    } else {
+      alert("No elements to remove!");
+    }
+  }
